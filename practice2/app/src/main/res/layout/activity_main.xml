@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/camel"
+    android:backgroundTint="@color/camel"
+    android:foregroundTint="@color/brown"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="281dp"
+        android:layout_height="151dp"
+        android:clickable="false"
+        android:color="@android:color/transparent"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Hello! Here you can get some positive emotions:)"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="239dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="114dp"
+        android:background="@color/brown"
+        android:backgroundTint="@color/brown"
+        android:cursorVisible="false"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="connectCatActivity"
+        android:text="View cute cat"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        app:iconTint="@color/brown"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.559"
+        app:strokeColor="@color/brown" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="414dp"
+        android:layout_height="66dp"
+        android:background="@color/brown"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="414dp"
+        android:layout_height="66dp"
+        android:background="@color/brown"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Cat world"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
